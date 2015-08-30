@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.lyw.zhbj.view.NoScrollViewPager
+        android:id="@+id/vp_content_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </com.lyw.zhbj.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_content_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <!-- android:button="@null" 这句话的作用是去掉左侧的单选按钮 -->
+
+        <RadioButton
+            android:id="@+id/rb_content_fragment_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/tab_home_bg"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_content_fragment_newscenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/tab_newscenter_bg"
+            android:gravity="center"
+            android:text="新闻中心"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_content_fragment_smartservice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/tab_smartservice_bg"
+            android:gravity="center"
+            android:text="智慧服务"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_content_fragment_govaffairs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/tab_govaffairs_bg"
+            android:gravity="center"
+            android:text="政务"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_content_fragment_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/tab_settings_bg"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</LinearLayout>
